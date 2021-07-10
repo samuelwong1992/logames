@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,13 @@
 		4630092C268D498A004D9C95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4630092A268D498A004D9C95 /* Main.storyboard */; };
 		4630092E268D498D004D9C95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4630092D268D498D004D9C95 /* Assets.xcassets */; };
 		46300931268D498D004D9C95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4630092F268D498D004D9C95 /* LaunchScreen.storyboard */; };
+		4630093A268D525E004D9C95 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46300939268D525E004D9C95 /* Theme.swift */; };
+		5BE54A8175D3CB56B78EFA39 /* libPods-Logames.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E069E5DF49415DA16D2B643 /* libPods-Logames.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D7B3FBBF0727A21C9FD390D /* Pods-Logames.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Logames.debug.xcconfig"; path = "Target Support Files/Pods-Logames/Pods-Logames.debug.xcconfig"; sourceTree = "<group>"; };
+		2E069E5DF49415DA16D2B643 /* libPods-Logames.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Logames.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		46300921268D498A004D9C95 /* Logames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Logames.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46300924268D498A004D9C95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46300926268D498A004D9C95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		4630092D268D498D004D9C95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46300930268D498D004D9C95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46300932268D498D004D9C95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46300939268D525E004D9C95 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = SOURCE_ROOT; };
+		D17EBC94F5013CD9095511DB /* Pods-Logames.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Logames.release.xcconfig"; path = "Target Support Files/Pods-Logames/Pods-Logames.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BE54A8175D3CB56B78EFA39 /* libPods-Logames.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				46300923268D498A004D9C95 /* Logames */,
 				46300922268D498A004D9C95 /* Products */,
+				9938E5048330618E77325913 /* Pods */,
+				A99C9A59245F0523280FD932 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +65,7 @@
 		46300923268D498A004D9C95 /* Logames */ = {
 			isa = PBXGroup;
 			children = (
+				46300938268D524E004D9C95 /* Constants */,
 				46300924268D498A004D9C95 /* AppDelegate.swift */,
 				46300926268D498A004D9C95 /* SceneDelegate.swift */,
 				46300928268D498A004D9C95 /* ViewController.swift */,
@@ -67,6 +77,31 @@
 			path = Logames;
 			sourceTree = "<group>";
 		};
+		46300938268D524E004D9C95 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				46300939268D525E004D9C95 /* Theme.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		9938E5048330618E77325913 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D7B3FBBF0727A21C9FD390D /* Pods-Logames.debug.xcconfig */,
+				D17EBC94F5013CD9095511DB /* Pods-Logames.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A99C9A59245F0523280FD932 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E069E5DF49415DA16D2B643 /* libPods-Logames.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +109,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46300935268D498D004D9C95 /* Build configuration list for PBXNativeTarget "Logames" */;
 			buildPhases = (
+				EF25AD387C244CD9645D8CAE /* [CP] Check Pods Manifest.lock */,
 				4630091D268D498A004D9C95 /* Sources */,
 				4630091E268D498A004D9C95 /* Frameworks */,
 				4630091F268D498A004D9C95 /* Resources */,
@@ -132,12 +168,38 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		EF25AD387C244CD9645D8CAE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Logames-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4630091D268D498A004D9C95 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				46300929268D498A004D9C95 /* ViewController.swift in Sources */,
+				4630093A268D525E004D9C95 /* Theme.swift in Sources */,
 				46300925268D498A004D9C95 /* AppDelegate.swift in Sources */,
 				46300927268D498A004D9C95 /* SceneDelegate.swift in Sources */,
 			);
@@ -283,6 +345,7 @@
 		};
 		46300936268D498D004D9C95 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D7B3FBBF0727A21C9FD390D /* Pods-Logames.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +365,7 @@
 		};
 		46300937268D498D004D9C95 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D17EBC94F5013CD9095511DB /* Pods-Logames.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

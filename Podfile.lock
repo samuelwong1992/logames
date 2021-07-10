@@ -1,0 +1,16 @@
+PODS:
+  - wongyhelpers (0.1.5)
+
+DEPENDENCIES:
+  - wongyhelpers
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - wongyhelpers
+
+SPEC CHECKSUMS:
+  wongyhelpers: 027699abd5e71ae91ce2d07fbe283bae9870aaa5
+
+PODFILE CHECKSUM: e7f19156434555e41e855220e42127ab9812f8ef
+
+COCOAPODS: 1.10.1
