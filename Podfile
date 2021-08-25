@@ -1,5 +1,5 @@
 # Uncomment this line to define a global platform for your project
-source 'https://github.com/CocoaPods/Specs.git'
+source 'https://cdn.cocoapods.org/'
 platform :ios, '12.4'
 
 def available_pods
